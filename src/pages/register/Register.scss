@@ -1,0 +1,142 @@
+.register {
+    width: 100vw;
+    height: 100vh;
+    background-color: rgb(209, 209, 207);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    .registerwrapper {
+        width: 80%;
+        display: flex;
+
+        .registerleft {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 0 20px;
+            justify-content: center;
+
+            .registerlogo {
+                font-size: 60px;
+                font-weight: 800;
+                color: #000;
+                margin-bottom: 10px;
+            }
+
+            .registerdesc {
+                font-size: 20px;
+            }
+        }
+
+        .registerright {
+            display: flex;
+            flex-direction: column;
+            flex: 1;
+            margin: 0 20px;
+            justify-content: center;
+
+            .registerbox {
+                display: flex;
+                flex-direction: column;
+                background-color: #fff;
+                border-radius: 10px;
+                width: 100%;
+
+                .top {
+                    display: flex;
+                    align-items: center;
+                    justify-content: space-between;
+                    margin: 30px;
+
+                    .profileimg {
+                        display: flex;
+                        width: 70px;
+                        height: 70px;
+                        border-radius: 50%;
+                        object-fit: cover;
+                    }
+
+                    .forminput {
+                        display: flex;
+                        align-items: center;
+
+                        label {
+                            display: flex;
+                            align-items: center;
+
+                            .icon {
+                                font-size: 34px;
+                                color: #333;
+                                margin-left: 10px;
+                                cursor: pointer;
+                            }
+                        }
+                    }
+                }
+
+                .bottom {
+                    .bottombox {
+                        height: 450px;
+                        padding: 5px 40px 10px 40px;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: space-between;
+                        border-radius: 10px;
+                        background-color: #fff;
+
+                        .registerinput {
+                            height: 50px;
+                            border-radius: 10px;
+                            padding-left: 20px;
+                            font-size: 18px;
+                            border: 1px solid gray;
+
+                            &:focus {
+                                outline: none;
+                            }
+                        }
+
+                        .registerbtn {
+                            height: 50px;
+                            width: 100%;
+                            background: rgb(21,21,20);
+                            color: #fff;
+                            border-radius: 10px;
+                            font-weight: 500;
+                            font-size: 23px;
+                            border: none;
+                            margin-bottom: 5px;
+                            cursor: pointer;
+                        }
+
+                        .loginregisterbtn {
+                            height: 50px;
+                            width: 100%;
+                            background: #42b72a;
+                            color: #fff;
+                            border-radius: 10px;
+                            font-weight: 500;
+                            font-size: 23px;
+                            border: none;
+                            margin-bottom: 5px;
+                            cursor: pointer;
+                        }
+                    }
+                }
+            }   
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .registerleft {
+        .registerlogo {
+            display: none;
+        }
+
+        .registerdesc {
+            display: none;
+        }
+    }
+}

@@ -1,0 +1,78 @@
+.app.dark {
+    background-color: #111111;
+    color: rgb(156,156,156);
+
+    .navbarcontainer {
+        background-color: #111111;
+        color:  rgb(156,156,156);
+        border-bottom: 0.5px solid  rgb(156,156,156);
+
+        .logo {
+            color:  rgb(156,156,156);
+        }
+
+        .navbarlink {
+            color:  rgb(156,156,156);
+        }
+
+        .searchinput {
+            color: #000000;
+        }
+    }
+
+    .sidebar {
+        background-color: #111111;
+        color:  rgb(156,156,156);
+
+        .sidebarbtn {
+            background-color:  rgb(156,156,156);
+            color: #111111;
+        }
+    }
+
+    .menulink:hover {
+        background-color:rgba(98,97,97,0.3) ;
+    }
+
+    .friendname {
+        color: rgb(156,156,156);
+    }
+
+    .feed {
+        background-color: #111111;
+        color: rgb(156,156,156);
+
+        .shareinput {
+            color: rgb(156,156,156);
+        }
+    }
+
+    .rightbar {
+        background-color: #111111;
+
+        .rightbarusername {
+            color: rgb(156,156,156);
+        }
+    }
+
+    .editbtn {
+        background-color: rgb(156,156,156);
+        color: #000000;
+    }
+
+    .editprofile {
+        .bottom {
+            .right {
+                form {
+                    input {
+                        color: rgb(156,156,156);
+                    }
+                    .updatebutton {
+                        background-color: rgb(156,156,156);
+                        color: #000000;
+                    }
+                }
+            }
+        }
+    }
+}

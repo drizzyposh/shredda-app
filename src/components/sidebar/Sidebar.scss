@@ -1,0 +1,120 @@
+.sidebar {
+    flex: 3;
+    height: calc(100vh - 50px);
+    position: sticky;
+    top: 50px;
+    overflow-y: scroll;
+    
+
+    .sidebar-container {
+        padding: 20px;
+
+        .sidebarbtn {
+            background-color: rgb(21,21,20);
+            color: #fff;
+            border-radius: 5px;
+            font-weight: 500;
+            padding: 10px;
+            margin: 20px;
+            width: 150px;
+            border: none;
+            cursor: pointer;
+        }
+
+        .sidebarhr {
+            margin: 10px 0 ;
+        }
+
+        .friendlist {
+            padding: 0;
+            margin: 0;
+            list-style: none;
+
+            .friends {
+                display: flex;
+                cursor: pointer;
+                align-items: center;
+                margin-bottom: 20px;
+
+                .friendimg {
+                    width: 40px;
+                    height: 40px;
+                    border-radius: 50%;
+                    margin-right: 20px;
+                    object-fit: cover;
+                }
+
+                .friendname {
+                    font-weight: 500;
+                    color: black;
+                    font-size: 1rem;
+                }
+            }
+        }
+    }
+}
+
+
+
+
+
+::-webkit-scrollbar {
+    width: 5px;
+}
+
+::-webkit-scrollbar-track {
+    background-color: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: grey;
+}
+
+@media screen and (max-width: 992px) {
+    .friendname {
+        display: none;
+    }
+
+    .sidebar {
+        flex: 1;
+        .sidebar-container {
+            padding: 17px;
+
+            .sidebarbtn {
+                display: none;
+            }
+
+            .sidebarhr {
+                display: none;
+            }
+        }
+    }
+
+    ::-webkit-scrollbar {
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-track {
+        display: none;
+    }
+    
+    ::-webkit-scrollbar-thumb {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .sidebar {
+        display: block;
+
+        .sidebar-container {
+            padding: 3px;
+        }
+    }
+}
+
+@media screen and (max-width: 576px) {
+    .sidebar {
+        display: none;
+    }
+}

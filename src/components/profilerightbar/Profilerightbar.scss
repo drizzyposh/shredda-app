@@ -1,0 +1,76 @@
+.profilerightbar {
+    flex: 3.5;
+    padding:0 20px 0 0;
+
+    .profilerightbarheading {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin: 20px 0;
+
+
+        .profilerightbartitle {
+            font-size: 16px;
+            font-weight: 500;
+        }
+
+        .editbutton {
+            border: none;
+            padding: 6px;
+            border-radius: 5px;
+            background-color: rgb(21,21,20);
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+
+    .profilerightbarinfo {
+        margin-bottom: 30px;
+
+        .profileinfoitem {
+            margin-bottom: 10px;
+        }
+
+        .profileinfokey {
+            font-weight: 500;
+            margin-right: 20px;
+        }
+
+        .profileinfovalue {
+            font-weight: 300;
+        }
+    }
+
+    .profileinfofollowings {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        margin-top: 20px;
+
+        .profileinfofollowing {
+            display: flex;
+            flex-direction: column;
+            margin-bottom: 20px;
+            cursor: pointer;
+
+            .profileinfofollowingimg {
+                width: 100px;
+                height: 100px;
+                object-fit: cover;
+                border-radius: 5px;
+            }
+
+            .profileinfofollwingname {
+                align-self: center;
+                margin-top: 5px;
+                font-size: 15px;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 768px) {
+    .profilerightbar {
+        display: none;
+    }
+}
