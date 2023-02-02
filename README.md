@@ -9,3 +9,4 @@
 ## Features
 - Light and Dark mode theme
 - With the email/password authenticaton enabled, Users get to Register for an account and Log in
+- Edit profile
